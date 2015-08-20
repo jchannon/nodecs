@@ -12,8 +12,14 @@ Simply open your dnx app in your favoruite editor, make changes and watch them g
 
 Clone this repo
 Run `docker build -t jchannon/nodecs:1.0.0-beta6 .`
+
+
 Create your dnx app in a directory
+
 `docker run -it -p 5001:5001 -v /mnt/hgfs/Projects/MyApp:/src -w /src jchannon/nodecs:1.0.0-beta6`
+
 Browse to http://localhost:5001
+
 Make a change to a file in your app in your editor
+
 F5 and bingo!
