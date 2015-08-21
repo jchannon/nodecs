@@ -1,0 +1,14 @@
+{
+    "dependencies": {
+        "Kestrel": "1.0.0-beta6-*",
+        "Microsoft.AspNet.Owin": "1.0.0-beta6-*",
+        "Nancy": "1.2.0"
+    },
+    "commands": {
+        "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:5001"
+    },
+    "frameworks": {
+        "dnx451": {
+        }
+    }
+}
