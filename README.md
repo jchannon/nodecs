@@ -12,10 +12,10 @@ Simply open your dnx app in your favourite editor, make changes and watch them g
 
 * Clone this repo
 * Move to the relevant version directory
-* Run `docker build -t jchannon/nodecs:1.0.0-beta6 .`
+* Run `docker build -t jchannon/nodecs:1.0.0-beta7 .`
 * Move to the samples directory
 * **NOTE :** On OSX/Windows you have to create a folder share between your docker host vm and your host OS
-* Run `docker run -it -p 5001:5001 -v /mnt/hgfs/Projects/MyApp:/src -w /src jchannon/nodecs:1.0.0-beta6`
+* Run `docker run -it -p 5001:5001 -v /mnt/hgfs/Projects/MyApp:/src -w /src jchannon/nodecs:1.0.0-beta7`
 * Browse to http://DOCKER_IP:5001
 * Make a change to a file in your app in your editor
-* Go to your borwser, press F5 and bingo!
+* Go to your browser, press F5 and bingo!
