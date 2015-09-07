@@ -6,7 +6,7 @@ It adds to it an installation of nodejs with nodemon and a nuget.config that use
 
 When using this Dockerfile it will restore your app's packages and then watch file changes for `cs` & `json` extensions.
 
-Simply open your dnx app in your favourite editor, make changes and watch them get executed in docker.
+Simply open your dnx app in your favourite [omnisharp](http://ominsharp.net) editor, make changes and watch them get executed in docker.
 
 ### Usage
 
