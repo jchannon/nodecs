@@ -1,7 +1,7 @@
 # NodeCs
 
 NodeCs is a 'hot reload' Dockerfile to simplify [DNX][] app development. The Dockerfile is based on the
-[Microsoft ASP.Net Docker Image][] and adds to an installation of [Node.js][] along with [nodemon][] and a
+[Microsoft ASP.Net Docker Image][] and adds to it an installation of [Node.js][] along with [nodemon][] and a
 nuget.config that uses the beta builds from the [MyGet feed][].
 
 Using this Dockerfile it will restore your app's packages and then watch file changes for `*.cs` and
