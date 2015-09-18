@@ -15,15 +15,15 @@ To get started using this Dockerfile simply follow the steps below:
 
 1. Clone this repo
 
-- Move to the relevant version directory
+2. Move to the relevant version directory
 
-- Run `docker build -t jchannon/nodecs:1.0.0-beta7 .`
+3. Run `docker build -t jchannon/nodecs:1.0.0-beta7 .`
 
-- Move to the samples directory
+4. Move to the samples directory
 
-- __NOTE :__ On OSX/Windows you must create a folder share between your Docker VM and your OS
+5. __NOTE :__ On OSX/Windows you must create a folder share between your Docker VM and your OS
 
-- Run `docker run -it -p 5001:5001 -v /mnt/hgfs/Projects/MyApp:/src -w /src jchannon/nodecs:1.0.0-beta7`
+6. Run `docker run -it -p 5001:5001 -v /mnt/hgfs/Projects/MyApp:/src -w /src jchannon/nodecs:1.0.0-beta7`
 
 Now you can browse to `http://DOCKER_IP:5001` to see your app.
 
