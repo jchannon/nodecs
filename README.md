@@ -1,21 +1,43 @@
-## NodeCs
+# NodeCs
 
-This repo provides a Dockerfile based on Microsoft ASP.Net docker image.
+NodeCs is a 'hot reload' Dockerfile to simplify [DNX][] app development. The Dockerfile is based on the
+[Microsoft ASP.Net Docker Image][] and adds to an installation of [Node.js][] along with [nodemon][] and a
+nuget.config that uses the beta builds from the [MyGet feed][].
 
-It adds to it an installation of nodejs with nodemon and a nuget.config that uses the beta builds from the myget feed.
+Using this Dockerfile it will restore your app's packages and then watch file changes for `*.cs` and
+`*.json` extensions. Simply open your [DNX][] app in your favorite [OmniSharp][] editor, make changes
+and watch them get executed in Docker.
 
-When using this Dockerfile it will restore your app's packages and then watch file changes for `cs` & `json` extensions.
+## Usage
+To get started using this Dockerfile simply follow the steps below:
 
-Simply open your dnx app in your favourite [omnisharp](http://ominsharp.net) editor, make changes and watch them get executed in docker.
 
-### Usage
 
-* Clone this repo
-* Move to the relevant version directory
-* Run `docker build -t jchannon/nodecs:1.0.0-beta7 .`
-* Move to the samples directory
-* **NOTE :** On OSX/Windows you have to create a folder share between your docker host vm and your host OS
-* Run `docker run -it -p 5001:5001 -v /mnt/hgfs/Projects/MyApp:/src -w /src jchannon/nodecs:1.0.0-beta7`
-* Browse to http://DOCKER_IP:5001
-* Make a change to a file in your app in your editor
-* Go to your browser, press F5 and bingo!
+- Clone this repo
+- Move to the relevant version directory
+- Run `docker build -t jchannon/nodecs:1.0.0-beta7 .`
+- Move to the samples directory
+- __NOTE :__ On OSX/Windows you must create a folder share between your Docker VM and your OS
+- Run `docker run -it -p 5001:5001 -v /mnt/hgfs/Projects/MyApp:/src -w /src jchannon/nodecs:1.0.0-beta7`
+
+Now you can browse to `http://DOCKER_IP:5001` to see your app.
+
+To see 'hot reload' in action:
+
+- Make a change to a file in your app in your editor
+- Go to your browser, press F5 and bingo!
+
+## Contributing
+NodeCs is an __open project__ and encourages participation. If you feel you can help in any way, be
+it with examples, testing, or new features please be our guest.
+
+## License
+
+Copyright Jonathan Channon 2015, Licensed under [MIT][].
+
+[MIT]: ./LICENSE
+[DNX]: https://github.com/aspnet/dnx
+[Node.js]: https://github.com/nodejs/node
+[OmniSharp]: http://www.omnisharp.net/
+[nodemon]: https://github.com/remy/nodemon
+[MyGet feed]: https://www.myget.org/gallery/aspnetvnext
