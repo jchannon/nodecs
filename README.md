@@ -13,11 +13,16 @@ To get started using this Dockerfile simply follow the steps below:
 
 
 
-- Clone this repo
+1. Clone this repo
+
 - Move to the relevant version directory
+
 - Run `docker build -t jchannon/nodecs:1.0.0-beta7 .`
+
 - Move to the samples directory
+
 - __NOTE :__ On OSX/Windows you must create a folder share between your Docker VM and your OS
+
 - Run `docker run -it -p 5001:5001 -v /mnt/hgfs/Projects/MyApp:/src -w /src jchannon/nodecs:1.0.0-beta7`
 
 Now you can browse to `http://DOCKER_IP:5001` to see your app.
@@ -41,3 +46,4 @@ Copyright Jonathan Channon 2015, Licensed under [MIT][].
 [OmniSharp]: http://www.omnisharp.net/
 [nodemon]: https://github.com/remy/nodemon
 [MyGet feed]: https://www.myget.org/gallery/aspnetvnext
+[Microsoft ASP.Net Docker Image]: https://github.com/aspnet/aspnet-docker
