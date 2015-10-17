@@ -27,6 +27,3 @@ Simply open your dnx app in your favourite editor, make changes and watch them g
 * Browse to http://DOCKER_IP:5001 
 * Make a change to a file in your app in your editor
 * Go to your borwser, press F5 and bingo!
-
-
-* Useful command to remove all your unused container : `docker ps -a | grep 'days ago' | xargs --no-run-if-empty docker rm`
