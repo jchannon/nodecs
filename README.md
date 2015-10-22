@@ -17,7 +17,7 @@ To get started using this Dockerfile simply follow the steps below:
 
 2. Move to the relevant version directory
 
-3. Run `docker build -t jchannon/nodecs:1.0.0-beta7 .`
+3. Run `docker build -t jchannon/nodecs:1.0.0-beta8 .`
 
 4. Move to the samples directory
 
